@@ -12,7 +12,7 @@ header{
 img{
   max-width: 100%;
 }
-.conteiner{
+.container{
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
@@ -35,9 +35,8 @@ padding: 15px 30px;
 color: #666;
 text-decoration: none;
 }
-nav ul li a:hover{
+nav ul li:hover{
   border-bottom: 4px solid #d08047;
-  color: #d08047;
 }
 
 h2{
@@ -59,6 +58,9 @@ th{
   width: 30%;
   padding: 15px;
 }
+.main{
+  height: 100%;
+}
 table th a{
   color: #666;
 }
@@ -79,4 +81,19 @@ footer a{
 }
 footer a:hover{
   color: #d08047;
+}
+
+@media screen and (max-width:500px){
+  nav ul li{
+   display: flex;
+   flex-direction: column;
+  }
+
+  nav ul li:hover{
+    display: inline-block;
+    border-bottom: 4px solid #d08047;
+  }
+  th{
+    width: 40%;
+  }
 }
